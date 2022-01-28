@@ -1,0 +1,166 @@
+body {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-color: #ff946d;
+}
+
+.main-div {
+  margin: 120px auto;
+  max-width: 400px;
+  max-height: 450px;
+  width: 350px;
+  background: white;
+  border-radius: 5px;
+  padding: 25px;
+}
+
+.inputFeild {
+  height: 5%;
+  padding: 12px;
+  outline: none;
+  border-radius: 4px;
+  width: 72%;
+  border: 1px solid #ccc;
+  font-size: 15px;
+}
+
+.SubmitBtn {
+  padding: 5px;
+  width: 60px;
+  height: 100%;
+  border: none;
+  outline: none;
+  background: purple;
+  color: white;
+  font-size: 28px;
+  cursor: pointer;
+  border-radius: 3px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.UpdateBtn2 {
+  padding: 5px;
+  width: 60px;
+  height: 100%;
+  border: none;
+  outline: none;
+  background: #26be3a;
+  color: white;
+  font-size: 28px;
+  cursor: pointer;
+  border-radius: 3px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.TaskList {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  max-height: 230px;
+  overflow-y: auto;
+}
+
+.TaskListLiElem {
+  list-style: none;
+  height: 45px;
+  line-height: 45px;
+  position: relative;
+  background: #f3eded;
+  border-radius: 3px;
+  margin-bottom: 8px;
+  padding: 0 15px;
+  font-size: 20px;
+  overflow: hidden;
+  margin-left: -40px;
+}
+
+.TaskListLiElem :hover .updateBtn {
+  position: absolute;
+  right: 45px;
+  color: white;
+  width: 45px;
+  text-align: center;
+  background: #26be3a;
+  border-radius: 0 3px 3px 0;
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  padding: 5px;
+  font-size: 28px;
+  outline: none;
+  border: none;
+}
+
+.TaskListLiElem :hover .delBtn {
+  position: absolute;
+  right: 0px;
+  color: white;
+  width: 45px;
+  text-align: center;
+  background: #e74c32;
+  border-radius: 0 3px 3px 0;
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  padding: 5px;
+  font-size: 28px;
+  outline: none;
+  border: none;
+}
+
+.updateBtn {
+  position: absolute;
+  right: -45px;
+  color: white;
+  width: 45px;
+  text-align: center;
+  background: #26be3a;
+  border-radius: 4px 0px 0px 4px;
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  padding: 5px;
+  font-size: 28px;
+  outline: none;
+  border: none;
+}
+
+.delBtn {
+  position: absolute;
+  right: -60px;
+  color: white;
+  width: 45px;
+  text-align: center;
+  background: #e74c32;
+  border-radius: 0 3px 3px 0;
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  padding: 5px;
+  font-size: 28px;
+  outline: none;
+  border: none;
+}
+
+.footer {
+  font-size: 20px;
+}
+
+.ClearAllBtn {
+  float: right;
+  padding: 8px;
+  font-size: 15px;
+  background-color: purple;
+  color: white;
+  border-radius: 4px;
+  outline: none;
+  border: 0;
+  padding-left: 18px;
+  padding-right: 18px;
+}
+/*# sourceMappingURL=Todo.css.map */

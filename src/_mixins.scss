@@ -1,0 +1,32 @@
+
+@mixin ActionBtns($posRight , $bgcolor , $BR) {
+    position: absolute;
+    right: $posRight;
+    color: white;
+    width:45px;
+    text-align: center;
+    background: $bgcolor;
+    border-radius: $BR;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    padding:5px;
+    font-size: 28px;
+    outline:none;
+    border:none;
+}
+
+@mixin inputBtns ($color) {
+    padding:5px;
+    width:60px;
+    height:100%;
+    border:none;
+    outline:none;
+    background:$color;
+    color:white;
+    font-size: 28px;
+    cursor:pointer;
+    border-radius: 3px;
+    margin-left:10px;
+    cursor: pointer;
+    
+}

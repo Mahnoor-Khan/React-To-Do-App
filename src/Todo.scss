@@ -1,0 +1,86 @@
+@import "mixins" ;
+@import "variables" ;
+
+
+
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: rgb(255, 148, 109);
+}
+.main-div{
+    margin:120px auto;
+  max-width:400px;
+  max-height:450px;
+  width:350px;
+  background:white;
+  border-radius:5px;
+  padding:25px;
+//   overflow-y: auto;
+}
+.inputFeild{
+    height:5%;
+    padding:12px;
+    outline:none;
+    border-radius: 4px;
+    width: 72%;
+    border:1px solid #ccc;
+    font-size: 15px;
+}
+.SubmitBtn{
+    @include inputBtns($btn-clrs)
+}
+.UpdateBtn2{
+    @include inputBtns($update-btn)
+}
+
+.TaskList{
+    align-items:  center;
+    position: relative;
+    max-height: 230px;
+    overflow-y: auto;
+}
+.TaskListLiElem{
+  list-style: none;
+  height:45px;
+  line-height:45px;
+  position: relative;
+  background:rgb(243, 237, 237);
+  border-radius: 3px;
+  margin-bottom:8px;
+  padding:0 15px;
+  font-size: 20px;
+  overflow:hidden;
+  margin-left: -40px;
+  
+
+    :hover .updateBtn {
+        @include ActionBtns(45px , $update-btn , 0 3px 3px 0)
+    }
+    :hover .delBtn {
+        @include ActionBtns(0px , #e74c32 , 0 3px 3px 0)
+    }
+}
+.updateBtn{
+    @include ActionBtns(-45px , $update-btn , 4px 0px 0px 4px);
+}
+.delBtn{
+    @include ActionBtns(-60px , #e74c32 , 0 3px 3px 0);
+}
+.footer{
+font-size: 20px;
+}
+
+.ClearAllBtn{
+float: right;
+padding:8px;
+font-size: 15px;
+background-color: $btn-clrs;
+color:white;
+border-radius: 4px;
+outline: none;
+border: 0 ;
+padding-left: 10px + 8px;
+padding-right: 28px - 10px;
+}
